@@ -1,5 +1,6 @@
 :root {
     --cstm-bg-color: white;
+    --nav-height: 88px;
     
   }
 body{
@@ -11,7 +12,12 @@ background-image: url("../images/pexels-pixabay-413960.jpg");
 background-position: center;
 background-repeat: no-repeat;
 background-size: cover;
-height: 100vh;
+/* height: 100vh; */
+
+}
+
+.height-adjustment{
+  height: calc(100vh - var(--nav-height)) !important;
 }
 
 svg {
@@ -25,21 +31,23 @@ svg:hover{
 
 .card{
   width: 20rem;
+  filter: grayscale(1);
+  transition: filter .23s ease-in-out;
 }
 .card-img-top{
   height: 350px;
   object-fit: cover;
   /* grayscale: 1; */
-  filter: grayscale(1);
-  transition: filter .23s ease-in-out;
+  /* filter: grayscale(1);
+  transition: filter .23s ease-in-out; */
 }
 
-.card-img-top:hover {
+.card:hover {
     /* grayscale: 0; */
     filter: grayscale(0);
 }
 
-.top-nav {
+/* .top-nav {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -47,7 +55,7 @@ svg:hover{
   background-color: #00BAF0;
   background: linear-gradient(to left, #f46b45, #eea849);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: #FFF;
+  /* color: #FFF;
   height: 50px;
   padding: 1em;
 }
@@ -153,4 +161,4 @@ svg:hover{
   .menu > li:not(:last-child) {
     border-bottom: 1px solid #444;
   }
-}
+} */ */
