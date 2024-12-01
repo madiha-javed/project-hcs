@@ -47,6 +47,10 @@ svg:hover{
     filter: grayscale(0);
 }
 
+.dlg{
+  width: 60%;
+  margin: auto;
+}
 /* .top-nav {
   display: flex;
   flex-direction: row;

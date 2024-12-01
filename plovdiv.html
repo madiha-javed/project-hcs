@@ -72,25 +72,65 @@
   </header>
   <!-- Navbar Ending -->
 
-  <!-- About section -->
+
+  <!-- Image Slider -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/images/plovdiv.jpg" class="d-block w-100  height-adjustment" alt="...">
+        <div class="carousel-caption d-none d-md-block bg-secondary p-4 bg-opacity-75 rounded">
+          <h5>Plovdiv</h5>
+          <p>Some representative placeholder content for the first slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/images/plovdiv2.jpg" class="d-block w-100  height-adjustment" alt="...">
+        <div class="carousel-caption d-none d-md-block bg-secondary p-4 bg-opacity-75 rounded">
+          <h5>Plovdiv</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/images/plovdiv3.jpg" class="d-block w-100  height-adjustment" alt="...">
+        <div class="carousel-caption d-none d-md-block bg-secondary p-4 bg-opacity-75 rounded">
+          <h5>Plovdiv</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--Image Slider Ending -->
+
   <div class="container py-5">
     <div class="row">
       <div class="col-9">
-        <h3 >My Story</h3>
+        <h3> Plovdiv - Window to History and Culture</h3>
 
-        <p>This is how it all started. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore doloribus,
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nemo mollitia necessitatibus autem laborum! Ipsum quis eaque molestias beatae fuga, obcaecati, error aut animi blanditiis nostrum ad earum quos doloribus.
+          This is how it all started. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore doloribus,
           dolorem velit optio maxime
           reprehenderit praesentium unde dolores cupiditate consequatur quaerat similique sequi laboriosam quasi
-          pariatur, numquam facilis perspiciatis dolorum.</p>
+          pariatur, numquam facilis perspiciatis dolorum.
 
-        <figure>
-          <blockquote class="blockquote">
-            <p>Man cannot discover new oceans unless he has the courage to lose sight of the shore.</p>
-          </blockquote>
-          <figcaption class="blockquote-footer">
-            <cite title="Source Title">Andre Gide</cite>
-          </figcaption>
-        </figure>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore inventore voluptas quis possimus optio,
+          facere perspiciatis qui id ipsa nihil atque debitis earum dignissimos asperiores explicabo libero vero dolorem
+          enim!</p>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum similique hic quasi eum sit animi,
           aliquam molestias aliquid commodi magni minus voluptate. Eveniet mollitia delectus alias vero temporibus
           recusandae tempore!</p>
@@ -101,50 +141,36 @@
           ut inventore iste dolores atque culpa saepe ducimus. Corporis ipsum quisquam ratione dolorem velit repudiandae
           aut laboriosam.
         <p>
-          <figure>
-            <blockquote class="blockquote">
-              <p>Not all those who wander are lost.</p>
-            </blockquote>
-            <figcaption class="blockquote-footer">
-              <cite title="Source Title">J.R.R. Tolkien</cite>
-            </figcaption>
-          </figure>
-        <p>Magnam veritatis perferendis, inventore voluptatum
-          repellendus tenetur quae deleniti molestiae aliquid voluptatem sit quia earum cumque quis et minima aut rem
-          corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, quos aliquam.
-          aut laboriosam.
-        <p>
-          <p>In the End I would say lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam veritatis perferendis, inventore voluptatum
-            repellendus tenetur quae deleniti molestiae aliquid voluptatem sit quia earum cumque quis et minima aut rem
-            corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, quos aliquam. Facere accusantium,
-            ut inventore iste dolores atque culpa saepe ducimus. Corporis ipsum quisquam ratione dolorem velit repudiandae
-            aut laboriosam.
-          <p>
+
+
       </div>
       <div class="col-3">
-        <img src="/images/pexels-suedadilli-29498888.jpg" class="img-fluid" alt="...">
-        <h3 class="mt-4 py-1">Inspiration</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam veritatis perferendis, inventore voluptatum
-          repellendus tenetur quae deleniti molestiae aliquid voluptatem sit quia earum cumque quis et minima aut rem
-          corporis
-        <p>
 
 
+        <div class="card" id="info">
+          <div class="card-header">
+            Weather Update
+          </div>
+          <div class="card-body text-center">
+            <h4 class="card-title text-capitalize" id="cityName"></h4>
+            <img src="" class="" alt="weather condition" id="iconImage">
+            <p class="card-text">Now <span id="currentTemperature"></span> &#x2103; <br>
+              Hightest Temp: <span id="hightestTemperature"></span> &#x2103; <br>
+              Lowest Temp: <span id="lowestTemperature"></span> &#x2103; </p>
+            <h5 class="card-title text-capitalize" id="description"></h5>
+            <p><span id=""></span></p>
+          </div>
+        </div>
 
       </div>
-
     </div>
+
   </div>
-  <!-- About section Ending -->
+
 
   <footer
     class="d-flex flex-wrap justify-content-between align-items-center p-4 mt-4  bg-secondary text-white bg-opacity-75">
-    <!-- <div class="col-md-4 d-flex align-items-center">
-          <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
-            <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-          </a>
-          <span class="mb-3 mb-md-0 text-body-secondary">© 2024 Company, Inc</span>
-        </div> -->
+
     <span class="mb-3 mb-md-0 text-body-secondary">&copy; 2024 Made with Love, in Hamburg</span>
     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
       <li class="ms-3"><a class="text-body-secondary" href="#">
@@ -192,6 +218,9 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
     crossorigin="anonymous"></script>
+
+  <!-- luxon date JS libray -->
+  <!-- <script src="/js/luxon.js"></script> -->
   <!-- custom JS -->
   <script src="/js/index.js"></script>
 </body>

@@ -75,63 +75,47 @@
   <!-- About section -->
   <div class="container py-5">
     <div class="row">
-      <div class="col-9">
-        <h3 >My Story</h3>
+      <div class="col">
+        <h3>Shall I Cover  a new City?</h3>
 
-        <p>This is how it all started. Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore doloribus,
-          dolorem velit optio maxime
+        <h5 class="py-4">Lets talk about it</h5>
+          <p>dolorem velit optio maxime
           reprehenderit praesentium unde dolores cupiditate consequatur quaerat similique sequi laboriosam quasi
           pariatur, numquam facilis perspiciatis dolorum.</p>
 
-        <figure>
-          <blockquote class="blockquote">
-            <p>Man cannot discover new oceans unless he has the courage to lose sight of the shore.</p>
-          </blockquote>
-          <figcaption class="blockquote-footer">
-            <cite title="Source Title">Andre Gide</cite>
-          </figcaption>
-        </figure>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum similique hic quasi eum sit animi,
-          aliquam molestias aliquid commodi magni minus voluptate. Eveniet mollitia delectus alias vero temporibus
-          recusandae tempore!</p>
+          <form id="uSuggestion">
+          <div class="mb-5">
+            <label for="uCity" class="form-label">Which City should I go Next?</label>
+            <input type="input" class="form-control" id="uCity" placeholder="Paris may be?" >
+          </div>
+          <div class="mb-5">
+            <label for="uSelect" class="form-label">Reason to go:</label>
+            <select class="form-select" aria-label="Default select example" id="uSelect">
+              <option value="">Open this select menu</option>
+              <!-- <option selected>Open this select menu</option> -->
+              <option value="Exploration">Exploration</option>
+              <option value="Relaxation">Relaxation</option>
+              <option value="Adventure">Adventure</option>
+            </select>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam veritatis perferendis, inventore voluptatum
-          repellendus tenetur quae deleniti molestiae aliquid voluptatem sit quia earum cumque quis et minima aut rem
-          corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, quos aliquam. Facere accusantium,
-          ut inventore iste dolores atque culpa saepe ducimus. Corporis ipsum quisquam ratione dolorem velit repudiandae
-          aut laboriosam.
-        <p>
-          <figure>
-            <blockquote class="blockquote">
-              <p>Not all those who wander are lost.</p>
-            </blockquote>
-            <figcaption class="blockquote-footer">
-              <cite title="Source Title">J.R.R. Tolkien</cite>
-            </figcaption>
-          </figure>
-        <p>Magnam veritatis perferendis, inventore voluptatum
-          repellendus tenetur quae deleniti molestiae aliquid voluptatem sit quia earum cumque quis et minima aut rem
-          corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, quos aliquam.
-          aut laboriosam.
-        <p>
-          <p>In the End I would say lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam veritatis perferendis, inventore voluptatum
-            repellendus tenetur quae deleniti molestiae aliquid voluptatem sit quia earum cumque quis et minima aut rem
-            corporis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur, quos aliquam. Facere accusantium,
-            ut inventore iste dolores atque culpa saepe ducimus. Corporis ipsum quisquam ratione dolorem velit repudiandae
-            aut laboriosam.
-          <p>
+          </div>
+
+
+          <div class="mb-3">
+          <button type="button" class="btn btn-primary" id="uBtnSubmit">Submit</button>
+          <input type="reset" class="btn btn-secondary" value="Reset" />
+        </div>
+          </form>
+       
       </div>
-      <div class="col-3">
-        <img src="/images/pexels-suedadilli-29498888.jpg" class="img-fluid" alt="...">
-        <h3 class="mt-4 py-1">Inspiration</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam veritatis perferendis, inventore voluptatum
-          repellendus tenetur quae deleniti molestiae aliquid voluptatem sit quia earum cumque quis et minima aut rem
-          corporis
-        <p>
+      
+
+      <dialog class="dlg p-5 text-center">
+        <h5 id="uMessage" class="my-5 py-4"></h5>
+        <button autofocus class="btn btn-secondary">Close</button>
+    </dialog>
 
 
-
-      </div>
 
     </div>
   </div>
