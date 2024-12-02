@@ -6,7 +6,11 @@
 body{
     background-color: var(--cstm-bg-color);
 }  
-
+#map { height: 380px; }
+.logo{
+  width: 60px;
+  height: auto;
+}
 .hero{
 background-image: url("../images/pexels-pixabay-413960.jpg");
 background-position: center;
@@ -51,6 +55,7 @@ svg:hover{
   width: 60%;
   margin: auto;
 }
+
 /* .top-nav {
   display: flex;
   flex-direction: row;
