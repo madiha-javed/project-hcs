@@ -2,28 +2,28 @@
 var loc=[
 {
  "city_id":0,
- "city_name" : "berlin", 
+ "city_name" : "Berlin", 
  "city_lat":52.520008,
  "city_lon":13.404954,
 
 },
 {
     "city_id":2,
-    "city_name" : "prague", 
+    "city_name" : "Prague", 
     "city_lat":50.075539,
     "city_lon":14.437800,
    
    },
 {
     "city_id":2,
-    "city_name" : "plovdiv", 
+    "city_name" : "Plovdiv", 
     "city_lat":42.144920,
     "city_lon":24.750320,
    
    },
    {
     "city_id":3,
-    "city_name" : "lahore", 
+    "city_name" : "Lahore", 
     "city_lat":31.520370,
     "city_lon":74.358749,
    
@@ -31,11 +31,11 @@ var loc=[
 ];
 
 
-//var map = L.map('map').setView([56.243350,57.552330], 13);
-var map= L.map('map').fitWorld();
+var map = L.map('map').setView([0,0],1);
+//map.setView([lat, lon], zoomlevel);
 var marker= "";
 L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    maxZoom: 19,
+    maxZoom: 15,
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
