@@ -32,8 +32,6 @@ svg:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* height: 100vh; */
-
 }
 
 .height-adjustment {
@@ -55,7 +53,3 @@ svg:hover {
   filter: grayscale(0);
 }
 
-.dlg {
-  width: 60%;
-  margin: auto;
-}
